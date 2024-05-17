@@ -55,7 +55,7 @@ let App = function (el) {
         }));
     });
 
-    window.onmousewheel = document.onmousewheel = e => {
+    window.onmousewheel = this.qs(".book").onmousewheel = e => {
         if (e.deltaY > 0) {
             this.state.rendition.next()
         } else {
